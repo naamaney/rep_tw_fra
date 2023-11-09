@@ -148,6 +148,7 @@ def main():
     
     if st.button("Tweeeeeet") and st.session_state.tweat:
         st.markdown(st.session_state.tweat)
+        tweat=st.session_state.tweat
         tweetertweet(tweat,greatid)
         st.write("cest poste")
                             
