@@ -5,9 +5,14 @@ from langchain.chains import LLMChain
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 
-from twit import tweeter
+#from twit import tweeter
 from tweety import Twitter
 
+from requests_oauthlib import OAuth1Session
+import os
+
+from dotenv import load_dotenv
+import tweepy
 
 import streamlit as st
 
@@ -54,6 +59,23 @@ llm_chain = LLMChain(
 )
 
 
+def tweeter():
+    # Load environment variables
+    load_dotenv()
+    consumer_key = os.environ.get("CONSUMER_KEY")
+    consumer_secret = os.environ.get("CONSUMER_SECRET")
+    # Assuming you've added your access token and secret to the .env file
+    access_token = os.environ.get("ACCESS_TOKEN")
+    access_token_secret = os.environ.get("ACCESS_TOKEN_SECRET")
+    bearer_token = os.environ.get("bearer_token")
+
+    client = tweepy.Client(bearer_token=bearer_token,
+                        consumer_key=consumer_key,
+                        consumer_secret=consumer_secret,
+                        access_token=access_token,
+                        access_token_secret=access_token_secret)
+    
+    return client
 
   
 twitapi = tweeter()
