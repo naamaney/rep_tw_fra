@@ -3,3 +3,4 @@ python-dotenv
 langchain
 requests_oauthlib
 tweety-ns
+tweepy
