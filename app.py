@@ -149,7 +149,8 @@ def main():
             if st.button("Tweeeeeet"):
                 # Tweet thread
                 #tweetertweet(tweat,greatid)
-                st.write = post_tweet(tweat,greatid)
+                etatdut=post_tweet(tweat,greatid)
+                st.write(etatdut)
                 #st.session_state.etatdut = tweetertweet(tweat,greatid)
             
  
