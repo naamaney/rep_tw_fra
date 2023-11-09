@@ -137,6 +137,7 @@ def main():
         # Generate thread from result
         tweat=llm_chain.predict(info=query)
         st.session_state.tweat = tweat
+        st.session_state.greatid = greatid
         st.markdown(st.session_state.tweat)
 
         # Display generated thread and result if available
