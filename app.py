@@ -152,7 +152,7 @@ def main():
         tweat=st.session_state.tweat
         greatid=st.session_state.greatid
         tweetertweet(tweat,greatid)
-        st.write("cest poste")
+        st.markdown("cest poste")
                             
  
 
