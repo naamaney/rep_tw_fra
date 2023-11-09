@@ -86,7 +86,7 @@ def tweetertweet(tweet, id):
     #check each tweet is under 280 chars
     #for i in range(len(tweets)):
     if len(tweet) > 280:
-            prompt = f"Raccourci ce tweet pour qu'il soit en dessous de 280 caractères : {tweet}"
+            prompt = f"Raccourci ce tweet pour qu'il soit en dessous de 280 caractères sans rajouter d'autres mots : {tweet}"
             tweet = llm.predict(prompt)[:280]
     #give some spacing between sentances
     tweet = tweet.replace('. ', '.\n\n')
@@ -145,8 +145,9 @@ def main():
             st.markdown(st.session_state.tweat)
         
             # Allow tweeting thread
+            bouton_tw = st.button("Tweeeeeet")
     
-            if st.button("Tweeeeeet"):
+            if bouton_tw:
                 # Tweet thread
                 #tweetertweet(tweat,greatid)
                 etatdut=tweetertweet(tweat,greatid)
