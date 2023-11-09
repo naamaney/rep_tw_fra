@@ -84,7 +84,7 @@ def tweetertweet(tweet, id):
 
 def read_tweet_url(url) :
     app = Twitter("session")
-    app.sign_in("cabinetdesidees", "testapi1319", extra="jjswdbdt")
+    app.sign_in("cabinetdesidees", "testapi1319")
     tweet = app.tweet_detail(url)
     return tweet
 
