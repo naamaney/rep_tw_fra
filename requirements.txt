@@ -2,5 +2,4 @@ openai
 python-dotenv
 langchain
 requests_oauthlib
-dotenv
 tweety-nx
