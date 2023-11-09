@@ -110,7 +110,10 @@ def read_tweet_url(url) :
     tweet = app.tweet_detail(url)
     return tweet
 
-
+def post_tweet(tweat, id) :
+    app = Twitter("session")
+    app.sign_in("cabinetdesidees", "testapi1319")
+    message = app.create_tweet(tweat, reply_to=id)
 
 def main():
     
@@ -149,7 +152,8 @@ def main():
     
             if tweet:
                 # Tweet thread
-                tweetertweet(tweat,greatid)
+                #tweetertweet(tweat,greatid)
+                post_tweet(tweat,greatid)
             
  
 
