@@ -113,9 +113,6 @@ def read_tweet_url(url) :
     return tweet
 
 def post_tweet(tweat, id) :
-    app = Twitter("session")
-    app.sign_in("cabinetdesidees", "testapi1319")
-    message = app.create_tweet(tweat, reply_to=id)
     return "Cest poste... miam !"
 
 def main():
@@ -154,7 +151,7 @@ def main():
                 # Tweet thread
                 #tweetertweet(tweat,greatid)
                 st.session_state.etatdut = post_tweet(tweat,greatid)
-                st.session_state.etatdut = tweetertweet(tweat,greatid)
+                #st.session_state.etatdut = tweetertweet(tweat,greatid)
                 if st.session_state.etatdut:
                     st.markdown(st.session_state.etatdut)
             
