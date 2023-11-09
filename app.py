@@ -137,10 +137,11 @@ def main():
         # Generate thread from result
         tweat=llm_chain.predict(info=query)
         st.session_state.tweat = tweat
+        st.markdown(st.session_state.tweat)
 
         # Display generated thread and result if available
-        if st.session_state.tweat:
-            st.markdown(st.session_state.tweat)
+        #if st.session_state.tweat:
+            #st.markdown(st.session_state.tweat)
         
             # Allow tweeting thread
             #bouton_tw = st.button("Tweeeeeet")
