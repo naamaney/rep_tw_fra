@@ -145,15 +145,12 @@ def main():
             st.markdown(st.session_state.tweat)
         
             # Allow tweeting thread
-            tweet = st.button("Tweeeeeet")
     
-            if tweet:
+            if st.button("Tweeeeeet"):
                 # Tweet thread
                 #tweetertweet(tweat,greatid)
-                st.session_state.etatdut = post_tweet(tweat,greatid)
+                st.write = post_tweet(tweat,greatid)
                 #st.session_state.etatdut = tweetertweet(tweat,greatid)
-                if st.session_state.etatdut:
-                    st.markdown(st.session_state.etatdut)
             
  
 
