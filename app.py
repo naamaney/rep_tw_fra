@@ -114,7 +114,7 @@ def post_tweet(tweat, id) :
     app = Twitter("session")
     app.sign_in("cabinetdesidees", "testapi1319")
     message = app.create_tweet(tweat, reply_to=id)
-    return = "Cest poste... miam !"
+    return "Cest poste... miam !"
 
 def main():
     
