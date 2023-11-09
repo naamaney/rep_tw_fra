@@ -81,7 +81,7 @@ def tweeter():
 twitapi = tweeter()
 
 def tweetertweet(tweet, id):
-
+    twitapi = tweeter()
     #tweets = thread.split("\n\n")
     #check each tweet is under 280 chars
     #for i in range(len(tweets)):
@@ -99,9 +99,11 @@ def tweetertweet(tweet, id):
     #tweets.pop(0)
     #for i in tweets:
     #print("tweeting: " + tweet)
+    cok="cest ok"
     reptweet = twitapi.create_tweet(text=tweet, 
                                     in_reply_to_tweet_id=id, 
                                     )
+    return cok
 
 
 def read_tweet_url(url) :
@@ -147,14 +149,12 @@ def main():
         
             # Allow tweeting thread
             tweet = st.button("Tweeeeeet")
-        
-            # Display info on result 
-            st.markdown("Twitter thread Generated from the below research")
     
             if tweet:
                 # Tweet thread
                 #tweetertweet(tweat,greatid)
                 st.session_state.etatdut = post_tweet(tweat,greatid)
+                st.session_state.etatdut = tweetertweet(tweat,greatid)
                 if st.session_state.etatdut:
                     st.markdown(st.session_state.etatdut)
             
