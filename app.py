@@ -70,13 +70,13 @@ def tweetertweet(tweet, id):
     tweet = tweet.replace('. ', '.\n\n')
 
     #for tweet in tweets:
-    tweet = tweet.replace('**', '')
+    #tweet = tweet.replace('**', '')
 
     #response = twitapi.create_tweet(text=tweets[0])
     #id = response.data['id']
     #tweets.pop(0)
     #for i in tweets:
-    print("tweeting: " + tweet)
+    #print("tweeting: " + tweet)
     reptweet = twitapi.create_tweet(text=tweet, 
                                     in_reply_to_tweet_id=id, 
                                     )
