@@ -127,8 +127,8 @@ def main():
     urld = st.text_input("adresse du tweet")
 
     # Initialize result and thread state if needed
-    #if not hasattr(st.session_state, 'tweat'):
-        #st.session_state.tweat = None
+    if not hasattr(st.session_state, 'tweat'):
+        st.session_state.tweat = None
 
     # Do research if query entered and no prior result
     if urld : #and (st.session_state.tweat is None):
@@ -145,9 +145,9 @@ def main():
             st.markdown(st.session_state.tweat)
         
             # Allow tweeting thread
-            bouton_tw = st.button("Tweeeeeet")
+            #bouton_tw = st.button("Tweeeeeet")
     
-            if bouton_tw:
+            if st.button("Tweeeeeet"):
                 # Tweet thread
                 #tweetertweet(tweat,greatid)
                 etatdut=tweetertweet(tweat,greatid)
