@@ -3,4 +3,4 @@ langchain
 requests_oauthlib
 os
 dotenv
-tweety-nx
+tweety
