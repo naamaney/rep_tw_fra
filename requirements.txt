@@ -4,6 +4,5 @@ pydantic==1.*
 langchain
 requests_oauthlib
 streamlit
-os
 dotenv
 tweety-nx
