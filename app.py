@@ -150,7 +150,7 @@ def main():
                 # Tweet thread
                 #tweetertweet(tweat,greatid)
                 #etatdut=post_tweet(tweat,greatid)
-                st.write("C'est ok")
+                st.markdown("C'est ok")
                 #st.session_state.etatdut = tweetertweet(tweat,greatid)
             
  
