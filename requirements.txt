@@ -2,4 +2,4 @@ openai
 python-dotenv
 langchain
 requests_oauthlib
-tweety
+tweety-ns
