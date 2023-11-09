@@ -27,8 +27,7 @@ template = """
     - L'objectif est de donner l'avis de la personnalité décrite ci-dessous si elle avait lu le tweet.
     - N'utilise pas d'expressions comme "n'est-ce pas ?".
     - Parle au moins une fois à la première personne du singulier.
-    - Ne dépassez pas les instructions de personnalité ci-dessous.
-    - Un tweet ne dépasse pas 280 caractères.
+    - Ne dépasse pas 280 caractères.
     - N'utilise pas de hashtags.
 
 
@@ -130,7 +129,7 @@ def main():
         st.session_state.tweat = None
 
     # Do research if query entered and no prior result
-    if urld : #and (st.session_state.tweat is None):
+    if urld and (st.session_state.tweat is None):
         q=read_tweet_url(urld)
         query=q.text
         greatid=q.id
