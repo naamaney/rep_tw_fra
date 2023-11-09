@@ -146,8 +146,10 @@ def main():
             # Allow tweeting thread
             #bouton_tw = st.button("Tweeeeeet")
     
-        if st.button("Tweeeeeet") and st.session_state.tweat:
-            tweetertweet(tweat,greatid)
+    if st.button("Tweeeeeet") and st.session_state.tweat:
+        st.markdown(st.session_state.tweat)
+        tweetertweet(tweat,greatid)
+        st.write("cest poste")
                             
  
 
