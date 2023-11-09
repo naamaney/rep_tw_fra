@@ -1,6 +1,5 @@
 openai
 python-dotenv
-pydantic==1.*
 langchain
 requests_oauthlib
 dotenv
