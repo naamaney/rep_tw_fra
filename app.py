@@ -103,8 +103,7 @@ def tweetertweet(tweet, id):
     reptweet = twitapi.create_tweet(text=tweet, 
                                     in_reply_to_tweet_id=id, 
                                     )
-    return cok
-
+    
 
 def read_tweet_url(url) :
     app = Twitter("session")
@@ -150,8 +149,8 @@ def main():
             if st.button("Tweeeeeet"):
                 # Tweet thread
                 #tweetertweet(tweat,greatid)
-                etatdut=tweetertweet(tweat,greatid)
-                st.markdown(etatdut)
+                tweetertweet(tweat,greatid)
+                
                 #st.session_state.etatdut = tweetertweet(tweat,greatid)
             
  
