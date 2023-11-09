@@ -145,13 +145,9 @@ def main():
             # Allow tweeting thread
             #bouton_tw = st.button("Tweeeeeet")
     
-            if st.button("Tweeeeeet"):
-                # Tweet thread
-                #tweetertweet(tweat,greatid)
-                tweetertweet(tweat,greatid)
-                
-                #st.session_state.etatdut = tweetertweet(tweat,greatid)
-            
+        if st.button("Tweeeeeet") and st.session_state.tweat:
+            tweetertweet(tweat,greatid)
+                            
  
 
 if __name__ == '__main__':
