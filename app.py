@@ -86,7 +86,7 @@ def tweetertweet(tweet, id):
     #check each tweet is under 280 chars
     #for i in range(len(tweets)):
     if len(tweet) > 280:
-            prompt = f"Raccourci ce tweet pour qu'il soit en dessous de 280 caractères sans rajouter d'autres mots : {tweet}"
+            prompt = f"Reduit ce texte pour qu'il soit en dessous de 280 caractères : {tweet}"
             tweet = llm.predict(prompt)[:280]
     #give some spacing between sentances
     tweet = tweet.replace('. ', '.\n\n')
