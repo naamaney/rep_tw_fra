@@ -25,8 +25,8 @@ template = """
     - Votre objectif est d'imiter la réponse de la personnalité décrite ci-dessous au tweet.
     - Réponds avec une approche scientifique lié à la psychologie ou science du cerveau.
     - L'objectif est de donner l'avis de la personnalité décrite ci-dessous si elle avait lu le tweet.
-    - N'utilise pas d'expressions comme "n'est-ce pas ?".
-    - Parle au moins une fois à la première personne du singulier.
+    - N'utilise pas ces expressions : "n'est-ce pas ?" , "non ?", "fascinant".
+    - Parle au moins une fois à la première personne du singulier pour donner ton avis tranché.
     - Ne dépasse pas 280 caractères.
     - N'utilise pas de hashtags.
 
