@@ -106,6 +106,7 @@ def tweetertweet(tweet, id):
 
 def read_tweet_url(url) :
     vurl = url.split("?")[0]
+
     app = Twitter("session")
     app.sign_in("cabinetdesidees", "testapi1319")
     tweet = app.tweet_detail(vurl)
